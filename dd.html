@@ -1,0 +1,166 @@
+
+<html>
+	<script>
+		function validate()
+{  
+  var name1= document.getElementById("name1").value;
+  var phone1= document.getElementById("phone1").value;
+  var email1= document.getElementById("email1").value;
+  var message1= document.getElementById("message1").value;
+  if(name1.length<=3)
+  {
+     var text="enter a valid name of 4 letter";
+     errormessage.innerHTML=text;
+     return false;
+  }
+  if(isNaN(phone1)||phone1.length!=10)
+  {
+    var text="enter a valid phone number of 10 digits";
+    errormessage.innerHTML=text;
+    return false;   
+  }
+  if(email1.length<6||email1.indexOf("@")==-1)   
+  {
+     var text="enter a valid email id";
+     errormessage.innerHTML=text;
+     return false;
+  }
+  if(message1.length<=15)
+  {
+    var text="enter a valid message at least 15 characters";
+    errormessage.innerHTML=text;
+    return false; 
+  }
+  alert("form is submitted successfully");
+  return true;
+
+
+
+}
+	</script>
+
+<style>
+	body{
+		background-color:  pink;
+	}
+	.header{
+		background-color:skyblue;
+	}
+	.wrapper .inputfield {margin-bottom:10px;}
+	 .wrapper .inputfield input[type=text], .wrapper textarea 
+	 {border:3px solid cyan;width:100%;padding:10px;}
+	  .wrapper textarea {resize:none;height:80px;}
+	 .wrapper .btn input[type=submit] 
+	 {border:10px;
+   margin-top:15px; 
+   padding:10px;
+   text-align:center;
+   width:100%;background-color:skyblue;
+   border-radius: 25px;
+   letter-spacing: 6px; 
+   text-transform: uppercase;
+   font-weight:bold;
+   cursor:pointer;
+   }
+   .wrapper {position:absolute;left:30%;top:30%;
+ 
+ max-width:350px;width:100%;
+ background-color:#c3fdff;
+ align:center;padding:25px
+ ;border-radius:15px;}
+   
+	   
+	 </style>
+<head>
+<title>Login page</title>
+</head>
+<body>
+
+	<body>
+
+
+
+		<header>
+		<div class=container>
+		
+			<html>
+				<head>
+				  <style>
+				  * {
+					box-sizing: border-box;
+				   }
+				  .header{background-color:#c3fdff;padding:20px;}
+				  .btn{float:right}
+				.container {width:100%;margin:0px;}
+				  header {background-color:skyblue;padding-top:3px;}
+				  ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  
+		}
+		
+		li {
+		  float: left;margin-left:100px ;padding:20px;
+		}
+		li a {
+		  display:block;
+		  color:#c3fdff;
+		  text-align: center;
+		  padding: 10px 18px;
+		  text-decoration: none;
+		  text-transform:uppercase;font-size:20px;
+		}
+		li a:hover {color:yellow;border-top-style:solid;  border-top-color:yellow;border-top-width:6px;padding-top:3px}
+				  </style>
+		<div class= header>
+		<img src= https://media.istockphoto.com/id/524624897/photo/orlando-florida-skyline-lake-eola-cityscape-skyscrapers-reflections-water-night.jpg?s=612x612&w=is&k=20&c=NUjpxO2EUXn5qLogy2wLKtYm7LxqDnIqcP8UzQNyh2c= height=70 width=100>
+	
+		</div>
+		<header>
+		<div class=container>
+		
+		<nav>
+		<ul>
+		<li><a href=g.html>home</a></li>
+		<li><a href=about.html>about</a></li>
+		<li><a href=vihaan.html.html>hotels</a></li>
+		<li><a href=contact.html>contact us</a></li>
+		
+		</ul>
+		</nav>
+		</div>
+		</header>
+		</body>
+		</html>
+
+<header>
+	<div class="wrapper">
+		<h2>login</h2>
+	<form id="myform" onsubmit="return validate();" method="post"action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfTzEwqXuXgazQ6lqc7JZC_iSw2XWyLVvi5q6mnN4EXDQIW7w/formResponse">
+			 <div class="inputfield">
+				<input type="text" placeholder="Name" id="name1" name="entry.1574899800">			
+			</div>
+			<div class="inputfield">
+				<input type="text" placeholder="Phone" id="phone1" name="entry.904120008">	
+			</div>
+			<div class="inputfield">
+				<input type="text" placeholder="Email" id="email1" name="entry.1516250134">	
+			</div>
+			<div class="inputfield">
+			   <textarea placeholder="Message" id="message1" name="entry.279017922"></textarea> 
+			</div>
+			<div class="btn">
+				<input type="submit">
+			</div>
+		<div id="errormessage"></div>	
+		</form>
+	</div>
+	
+	
+	
+</table>
+</form>
+</body>
+</html>
