@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(function(){
+
+  $('.faq-list-item').click(function(){
+    var $answer = $(this).find('.answer');
+
+    if($answer.hasClass('open')) { 
+      $answer.removeClass('open');
+      // Use the slideUp() method to hide $answer
+      $answer.slideUp();
+      
+      // Find the <span> elements inside, then rewrite the content using the text() method
+      $(this).find('span').text('+');
+      
+    } else {
+      $answer.addClass('open'); 
+      // Use the slideDown() method to show $answer
+      $answer.slideDown();
+      $(this).find('span').text('-');
+      // Find the <span> elements inside, then rewrite the content using the text() method
+      
+      
+    }
+  });
+});
+
+
+</script>
+<style>
+
+.faq{
+  text-align: center;
+  background-color:cyan;
+}
+
+
+.faq-list-item{
+position:relative;
+margin:10px;
+border-bottom:1px solid #ccc;
+cursor:pointer;
+
+}
+
+.faq-list-item span{
+position: absolute;
+display:inline-block;
+top:15px;
+right:200px;
+font-size:20px;
+}
+/* ------FAQ styling begins ----------*/
+.faqbox{
+background-color:#ABC8C7;
+opacity:0.8;
+border:2px solid #0D0221;
+font-family:"Times New Roman", Times, serif;
+padding:20px;
+color:#0D0221;
+}
+.answer{
+display:none;
+padding: 5px 0px;
+margin-bottom: 15px;
+}
+
+.faq-list-item{
+position:relative;
+margin:10px;
+border-bottom:1px solid #ccc;
+cursor:pointer;
+
+}
+
+.faq-list-item span{
+position: absolute;
+display:inline-block;
+top:15px;
+right:200px;
+font-size:20px;
+}
+/* ------FAQ styling ends----------*/
+.header{background-color:pink;padding:20px;}
+          .btn{float:right}
+</style>
+</head>
+<body>
+  <div class= header>
+    <img src= https://media.istockphoto.com/id/524624897/photo/orlando-florida-skyline-lake-eola-cityscape-skyscrapers-reflections-water-night.jpg?s=612x612&w=is&k=20&c=NUjpxO2EUXn5qLogy2wLKtYm7LxqDnIqcP8UzQNyh2c= height=70 width=100>
+    <button class=btn>
+    login
+    </button>
+    </div>
+    <header>
+      </header>
+<div class ="wrapper">
+<h1 class = 'faq'>FAQ</h1>
+<div class="faqbox">
+<ul> <li class='faq-list-item'> <h2>There is biolumenesnce in Florida.</h2> <span>+</span>
+
+ <div class='answer'><p>True<p></div> </li> 
+
+<li class='faq-list-item'><h2>There are no deers in Florida.</h2>  <span>+</span>
+
+ <div class='answer'> <p>False.</p></div> </li> 
+
+<li class='faq-list-item'><h2>Citrus County and Orange County are in Florida</h2> <span>+</span>
+
+ <div class='answer'><p>True.</p></div></li> 
+</ul>
+  
+</div>
+
+
+
+</body>
+
+</html>
